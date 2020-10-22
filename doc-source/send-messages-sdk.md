@@ -115,7 +115,7 @@ This email was sent using the Amazon Pinpoint API using the AWS SDK for .NET.";
                 try
                 {
                     Console.WriteLine("Sending message...");
-                    SendMessagesResponse response = client.SendMessages(sendRequest);
+                    client.SendMessagesAsync(sendRequest);
                     Console.WriteLine("Message sent!");
                 }
                 catch (Exception ex)
